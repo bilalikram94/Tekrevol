@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0c4d81f6-876a-40e2-bfcb-dc34872a7c36" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/basepage.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/basepage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/webdriverfactory.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/webdriverfactory.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/home/navigation.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home/navigation.py" afterDir="false" />
-    </list>
+    <list default="true" id="0c4d81f6-876a-40e2-bfcb-dc34872a7c36" name="Default Changelist" comment="" />
     <ignored path="chromedriver.exe" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -100,11 +95,6 @@
             <path>
               <item name="Tekrevol" type="b2602c69:ProjectViewProjectNode" />
               <item name="Tekrevol" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tekrevol" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tekrevol" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -122,7 +112,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -147,11 +137,18 @@
       <option name="presentableId" value="Default" />
       <updated>1544602381154</updated>
     </task>
+    <task id="LOCAL-00001" summary="inherited navigation to basepage&#10;completed navigation class.">
+      <created>1547818519561</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1547818519561</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.15178572" />
@@ -190,6 +187,36 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="inherited navigation to basepage&#10;completed navigation class." />
+    <option name="LAST_COMMIT_MESSAGE" value="inherited navigation to basepage&#10;completed navigation class." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/utilities/custom_logger.py">
