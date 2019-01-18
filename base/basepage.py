@@ -14,7 +14,7 @@ from base.selenium_drivers import SeleniumDriver
 from traceback import print_stack
 from utilities.util import Util
 from utilities.teststatus import Status
-#from pages.home.navigation import Navigation
+from pages.home.navigation import Navigation
 
 
 class BasePage(SeleniumDriver):
@@ -28,7 +28,7 @@ class BasePage(SeleniumDriver):
         self.driver = driver
         self.util = Util()
         self.stat = Status(driver)
-        #self.nav = Navigation(driver)
+        self.nav = Navigation(driver)
 
     def verifyPageTitle(self, titleToVerify):
         """

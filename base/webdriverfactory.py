@@ -50,7 +50,7 @@ class WebDriverFactory:
             driver = webdriver.Firefox()
 
         else:
-            driver = webdriver.Chrome("D:\\tekrevol\\chromedriver")
+            driver = webdriver.Chrome("D:\\GitHub\\tekrevol\\Tekrevol\\chromedriver.exe")
 
         # Setting Driver Implicit Time Out for an Element
 
