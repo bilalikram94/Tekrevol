@@ -1,0 +1,36 @@
+selenium_drivers.py         50 INFO     Element found with locator: .journey-main .heading-rotated div and  locatorType: css
+selenium_drivers.py        286 INFO     Element Scrolled into View with locator: .journey-main .heading-rotated divlocatorType: css
+selenium_drivers.py         50 INFO     Element found with locator: .journey-main .heading-rotated div and  locatorType: css
+selenium_drivers.py        115 INFO     Element Found by locator:.journey-main .heading-rotated div and locatorType:css
+teststatus.py               32 INFO     ### VERIFICATION SUCCESSFUL :: + Verify About Us
+selenium_drivers.py         50 INFO     Element found with locator: .journey h3 and  locatorType: css
+selenium_drivers.py        115 INFO     Element Found by locator:.journey h3 and locatorType:css
+teststatus.py               32 INFO     ### VERIFICATION SUCCESSFUL :: + Verify Our Vision
+selenium_drivers.py        142 INFO     Waiting for maximum :: 10 :: seconds for element to be clickable
+selenium_drivers.py        151 INFO     Element not appeared on the web pageMORE ABOUT US
+selenium_drivers.py         53 INFO     Element not found with locator: MORE ABOUT US and  locatorType: link
+selenium_drivers.py        118 INFO     Element not found by locatorMORE ABOUT US and locatorType:link
+teststatus.py               35 ERROR    ### VERIFICATION FAILED :: + Verify More About Us
+selenium_drivers.py        173 INFO     Screenshot save to directory - D:\tekrevol/screenshots/Verify More About Us.1547545057430.png
+selenium_drivers.py         50 INFO     Element found with locator: .our-expertise h2 and  locatorType: css
+selenium_drivers.py        115 INFO     Element Found by locator:.our-expertise h2 and locatorType:css
+teststatus.py               32 INFO     ### VERIFICATION SUCCESSFUL :: + Verify Why Tekrevol
+selenium_drivers.py         50 INFO     Element found with locator: #headingOne [class='col-xs-8 text'] and  locatorType: css
+selenium_drivers.py        115 INFO     Element Found by locator:#headingOne [class='col-xs-8 text'] and locatorType:css
+teststatus.py               32 INFO     ### VERIFICATION SUCCESSFUL :: + Verify Guaranteed Clients
+selenium_drivers.py         50 INFO     Element found with locator: [href='\#collapseTwo'] [class='col-xs-8 text'] and  locatorType: css
+selenium_drivers.py        115 INFO     Element Found by locator:[href='\#collapseTwo'] [class='col-xs-8 text'] and locatorType:css
+teststatus.py               32 INFO     ### VERIFICATION SUCCESSFUL :: + Verify Integrated Solutions
+selenium_drivers.py         50 INFO     Element found with locator: [href='\#collapseFour'] [class='col-xs-8 text'] and  locatorType: css
+selenium_drivers.py        115 INFO     Element Found by locator:[href='\#collapseFour'] [class='col-xs-8 text'] and locatorType:css
+teststatus.py               32 INFO     ### VERIFICATION SUCCESSFUL :: + Verify Dynamic Web
+selenium_drivers.py         50 INFO     Element found with locator: [href='\#collapseFive'] [class='col-xs-8 text'] and  locatorType: css
+selenium_drivers.py        115 INFO     Element Found by locator:[href='\#collapseFive'] [class='col-xs-8 text'] and locatorType:css
+teststatus.py               32 INFO     ### VERIFICATION SUCCESSFUL :: + Verify Mobile Responsive
+selenium_drivers.py         50 INFO     Element found with locator: [href='\#collapseSix'] [class='col-xs-8 text'] and  locatorType: css
+selenium_drivers.py        115 INFO     Element Found by locator:[href='\#collapseSix'] [class='col-xs-8 text'] and locatorType:css
+teststatus.py               32 INFO     ### VERIFICATION SUCCESSFUL :: + Verify Customized Solutions
+selenium_drivers.py         50 INFO     Element found with locator: [href='\#collapseSeven'] [class='col-xs-8 text'] and  locatorType: css
+selenium_drivers.py        115 INFO     Element Found by locator:[href='\#collapseSeven'] [class='col-xs-8 text'] and locatorType:css
+teststatus.py               32 INFO     ### VERIFICATION SUCCESSFUL :: + Verify 
+teststatus.py               65 ERROR    Verify About Us All ### TEST FAILED

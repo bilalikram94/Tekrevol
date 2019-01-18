@@ -1,0 +1,187 @@
+{
+  "uid" : "df414960acc65294",
+  "name" : "test_AboutUs",
+  "fullName" : "tests.home.aboutus.AboutUsTest#test_AboutUs",
+  "historyId" : "22a5fa0d2f22ffe540f7d068b4e773ad",
+  "time" : {
+    "start" : 1547545041529,
+    "stop" : 1547545057860,
+    "duration" : 16331
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError",
+  "statusTrace" : "self = <aboutus.AboutUsTest testMethod=test_AboutUs>\n\n    @pytest.mark.run(order=1)\n    def test_AboutUs(self):\n>       self.about.AboutUsAll()\n\ntests\\home\\aboutus.py:15: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\npages\\home\\aboutus.py:93: in AboutUsAll\n    self.stat.markFinal(\"Verify About Us All\", result10, \"Verify \")\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <utilities.teststatus.Status object at 0x04903690>\ntestName = 'Verify About Us All', result = True, resultMessage = 'Verify '\n\n    def markFinal(self, testName, result, resultMessage):\n        \"\"\"\n        Mark the final result of the verification point in a test case\n        This needs to be called at least once in a test case\n        This should be final test status of the test case\n        \"\"\"\n        self.setResult(result, resultMessage)\n    \n        if \"FAIL\" in self.resultList:\n            self.log.error(testName + \" ### TEST FAILED\")\n            self.resultList.clear()\n>           assert True == False\nE           AssertionError\n\nutilities\\teststatus.py:67: AssertionError",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1547545041322,
+      "stop" : 1547545041322,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "browser",
+    "time" : {
+      "start" : 1547545025191,
+      "stop" : 1547545025191,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "classSetup",
+    "time" : {
+      "start" : 1547545041321,
+      "stop" : 1547545041321,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "oneTimeSetUp",
+    "time" : {
+      "start" : 1547545025191,
+      "stop" : 1547545041321,
+      "duration" : 16130
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError",
+    "statusTrace" : "self = <aboutus.AboutUsTest testMethod=test_AboutUs>\n\n    @pytest.mark.run(order=1)\n    def test_AboutUs(self):\n>       self.about.AboutUsAll()\n\ntests\\home\\aboutus.py:15: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\npages\\home\\aboutus.py:93: in AboutUsAll\n    self.stat.markFinal(\"Verify About Us All\", result10, \"Verify \")\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <utilities.teststatus.Status object at 0x04903690>\ntestName = 'Verify About Us All', result = True, resultMessage = 'Verify '\n\n    def markFinal(self, testName, result, resultMessage):\n        \"\"\"\n        Mark the final result of the verification point in a test case\n        This needs to be called at least once in a test case\n        This should be final test status of the test case\n        \"\"\"\n        self.setResult(result, resultMessage)\n    \n        if \"FAIL\" in self.resultList:\n            self.log.error(testName + \" ### TEST FAILED\")\n            self.resultList.clear()\n>           assert True == False\nE           AssertionError\n\nutilities\\teststatus.py:67: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "422d06a924e33477",
+      "name" : "Verify More About Us",
+      "source" : "422d06a924e33477.png",
+      "type" : "image/png",
+      "size" : 86905
+    }, {
+      "uid" : "c5d2649d8b7c9b8b",
+      "name" : "log",
+      "source" : "c5d2649d8b7c9b8b.txt",
+      "type" : "text/plain",
+      "size" : 4063
+    }, {
+      "uid" : "a35f490b1ad64cfa",
+      "name" : "stdout",
+      "source" : "a35f490b1ad64cfa.txt",
+      "type" : "text/plain",
+      "size" : 106
+    }, {
+      "uid" : "28bf5ccbbfbc7ec4",
+      "name" : "stderr",
+      "source" : "28bf5ccbbfbc7ec4.txt",
+      "type" : "text/plain",
+      "size" : 4723
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 4
+  },
+  "afterStages" : [ {
+    "name" : "setUp::0",
+    "time" : {
+      "start" : 1547545057893,
+      "stop" : 1547545057893,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "oneTimeSetUp::0",
+    "time" : {
+      "start" : 1547545057945,
+      "stop" : 1547545060263,
+      "duration" : 2318
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests.home"
+  }, {
+    "name" : "suite",
+    "value" : "aboutus"
+  }, {
+    "name" : "subSuite",
+    "value" : "AboutUsTest"
+  }, {
+    "name" : "host",
+    "value" : "test11"
+  }, {
+    "name" : "thread",
+    "value" : "12620-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.home.aboutus"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "df414960acc65294.json",
+  "parameterValues" : [ ]
+}

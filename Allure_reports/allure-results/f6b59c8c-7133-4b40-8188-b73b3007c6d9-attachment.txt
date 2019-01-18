@@ -1,0 +1,76 @@
+  File "c:\python\lib\runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "c:\python\lib\runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "C:\Python\Scripts\pytest.exe\__main__.py", line 9, in <module>
+    sys.exit(main())
+  File "c:\python\lib\site-packages\_pytest\config\__init__.py", line 77, in main
+    return config.hook.pytest_cmdline_main(config=config)
+  File "c:\python\lib\site-packages\pluggy\hooks.py", line 284, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "c:\python\lib\site-packages\pluggy\manager.py", line 67, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "c:\python\lib\site-packages\pluggy\manager.py", line 61, in <lambda>
+    firstresult=hook.spec.opts.get("firstresult") if hook.spec else False,
+  File "c:\python\lib\site-packages\pluggy\callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "c:\python\lib\site-packages\_pytest\main.py", line 218, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "c:\python\lib\site-packages\_pytest\main.py", line 185, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "c:\python\lib\site-packages\_pytest\main.py", line 225, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "c:\python\lib\site-packages\pluggy\hooks.py", line 284, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "c:\python\lib\site-packages\pluggy\manager.py", line 67, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "c:\python\lib\site-packages\pluggy\manager.py", line 61, in <lambda>
+    firstresult=hook.spec.opts.get("firstresult") if hook.spec else False,
+  File "c:\python\lib\site-packages\pluggy\callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "c:\python\lib\site-packages\_pytest\main.py", line 246, in pytest_runtestloop
+    item.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "c:\python\lib\site-packages\pluggy\hooks.py", line 284, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "c:\python\lib\site-packages\pluggy\manager.py", line 67, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "c:\python\lib\site-packages\pluggy\manager.py", line 61, in <lambda>
+    firstresult=hook.spec.opts.get("firstresult") if hook.spec else False,
+  File "c:\python\lib\site-packages\pluggy\callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "c:\python\lib\site-packages\_pytest\runner.py", line 76, in pytest_runtest_protocol
+    runtestprotocol(item, nextitem=nextitem)
+  File "c:\python\lib\site-packages\_pytest\runner.py", line 91, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+  File "c:\python\lib\site-packages\_pytest\runner.py", line 171, in call_and_report
+    call = call_runtest_hook(item, when, **kwds)
+  File "c:\python\lib\site-packages\_pytest\runner.py", line 195, in call_runtest_hook
+    treat_keyboard_interrupt_as_exception=item.config.getvalue("usepdb"),
+  File "c:\python\lib\site-packages\_pytest\runner.py", line 211, in __init__
+    self.result = func()
+  File "c:\python\lib\site-packages\_pytest\runner.py", line 193, in <lambda>
+    lambda: ihook(item=item, **kwds),
+  File "c:\python\lib\site-packages\pluggy\hooks.py", line 284, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "c:\python\lib\site-packages\pluggy\manager.py", line 67, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "c:\python\lib\site-packages\pluggy\manager.py", line 61, in <lambda>
+    firstresult=hook.spec.opts.get("firstresult") if hook.spec else False,
+  File "c:\python\lib\site-packages\pluggy\callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "c:\python\lib\site-packages\_pytest\runner.py", line 121, in pytest_runtest_call
+    item.runtest()
+  File "c:\python\lib\site-packages\_pytest\unittest.py", line 192, in runtest
+    self._testcase(result=self)
+  File "c:\python\lib\unittest\case.py", line 663, in __call__
+    return self.run(*args, **kwds)
+  File "c:\python\lib\unittest\case.py", line 615, in run
+    testMethod()
+  File "D:\tekrevol\tests\home\aboutus.py", line 15, in test_AboutUs
+    self.about.AboutUsAll()
+  File "D:\tekrevol\pages\home\aboutus.py", line 78, in AboutUsAll
+    result3 = self.verifyMoreAboutUs()
+  File "D:\tekrevol\pages\home\aboutus.py", line 41, in verifyMoreAboutUs
+    self.waitForElement(self.more_about_us, locatorType='link')
+  File "D:\tekrevol\base\selenium_drivers.py", line 152, in waitForElement
+    print_stack()
