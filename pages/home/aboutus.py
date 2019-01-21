@@ -11,12 +11,12 @@ class AboutUs(BasePage):
     our_vision_text = ".journey p"  # CSS
     more_about_us = "MORE ABOUT US"  # Link Text
     why_tekrevol = ".our-expertise h2"  # CSS
-    guaranteed_client = "#headingOne [class='col-xs-8 text']"  # CSS
-    integrated_solutions = "[href='\#collapseTwo'] [class='col-xs-8 text']"  # CSS
-    dynamic_web = "[href='\#collapseFour'] [class='col-xs-8 text']"  # CSS
-    mobile_responsive = "[href='\#collapseFive'] [class='col-xs-8 text']"  # CSS
-    customized_solutions = "[href='\#collapseSix'] [class='col-xs-8 text']"  # CSS
-    app_support = "[href='\#collapseSeven'] [class='col-xs-8 text']"  # CSS
+    guaranteed_client = "headingOne"  # id
+    integrated_solutions = "headingTwo"  # id
+    dynamic_web = "headingFour"  # id
+    mobile_responsive = "headingFive"  # id
+    customized_solutions = "Customized Solutions"  # link
+    app_support = "App Support Services"  # link
     guaranteed_client_text = ".panel-default:nth-of-type(1) [class='col-xs-12 info']"  # CSS
     integrated_solutions_text = ".panel-default:nth-of-type(2) [class='col-xs-12 info']"  # CSS
     dynamic_web_text = ".panel-default:nth-of-type(3) [class='col-xs-12 info']"  # CSS
@@ -47,27 +47,27 @@ class AboutUs(BasePage):
         return result
 
     def verifyGuaranteedClient(self):
-        result = self.isElementPresent(self.guaranteed_client, locatorType='css')
+        result = self.isElementPresent(self.guaranteed_client)
         return result
 
     def verifyIntegratedSolutions(self):
-        result = self.isElementPresent(self.integrated_solutions, locatorType='css')
+        result = self.isElementPresent(self.integrated_solutions)
         return result
 
     def verifyDynamicWeb(self):
-        result = self.isElementPresent(self.dynamic_web, locatorType='css')
+        result = self.isElementPresent(self.dynamic_web)
         return result
 
     def verifyMobileResponsive(self):
-        result = self.isElementPresent(self.mobile_responsive, locatorType='css')
+        result = self.isElementPresent(self.mobile_responsive)
         return result
 
     def verifyCustomizedSolutions(self):
-        result = self.isElementPresent(self.customized_solutions, locatorType='css')
+        result = self.isElementPresent(self.customized_solutions, locatorType='link')
         return result
 
     def verifyAppSupport(self):
-        result = self.isElementPresent(self.app_support, locatorType='css')
+        result = self.isElementPresent(self.app_support, locatorType='link')
         return result
 
     def AboutUsAll(self):

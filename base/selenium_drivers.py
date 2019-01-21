@@ -225,17 +225,22 @@ class SeleniumDriver:
             print("Element NOT Found")
             return False
 
-    def webScroll(self, direction="up"):
+    def webScroll(self, height, direction="up"):
         """
         NEW METHOD
+
+        If you want to scroll up then value should be negative
+        If you want to scroll down then value should be positive
         """
         if direction == "up":
             # Scroll UP
-            self.driver.execute_script("window.scrollBy(0,-1000);")
+            self.driver.execute_script("window.scrollBy(0," + height + ");")
+            self.log.info("Web Scrolled" + direction)
 
         if direction == "down":
             # Scroll Down
-            self.driver.execute_script("window.scrollBy(0,1000);")
+            self.driver.execute_script("window.scrollBy(0," + height + " );")
+            self.log.info("Web Scrolled" + direction)
 
     def mouseHover(self, locator, locatorType="id", element=None):
         """
@@ -319,7 +324,7 @@ class SeleniumDriver:
             height = self.driver.execute_script("return window.innerHeight;")
             width = self.driver.execute_script("return window.innerWidth;")
             self.log.info("Height of Current Window is: " + height + "Width of Current Window is: " + width)
-            return True
+            return height/2
 
         except:
             self.log.error("###Could not measure Height and Width !!!")
