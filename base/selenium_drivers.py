@@ -258,6 +258,7 @@ class SeleniumDriver:
         except:
             self.log.error("Cannot find element with locator: " + locator + " locatorType: " + locatorType)
             print_stack()
+            return False
 
     def mouseClick(self, locator, locatorType="id", element=None):
         """
@@ -352,6 +353,7 @@ class SeleniumDriver:
             else:
                 sel.select_by_visible_text(val)
                 self.log.info("Element selected from list by Visible Text" + val)
+
             return True
 
         except:

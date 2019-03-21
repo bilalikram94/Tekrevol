@@ -13,6 +13,7 @@ Is called in conftest file instead of Selenium Webdriver
 
 
 from selenium import webdriver
+from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
 
 
 class WebDriverFactory:
@@ -47,7 +48,8 @@ class WebDriverFactory:
 
             driver = webdriver.Ie()
         elif self.browser == "firefox":
-            driver = webdriver.Firefox()
+            binary = FirefoxBinary('C:\Program Files\Mozilla Firefox\\firefox.exe')
+            driver = webdriver.Firefox(firefox_binary=binary)
 
         else:
             driver = webdriver.Chrome("D:\\GitHub\\tekrevol\\Tekrevol\\chromedriver.exe")
