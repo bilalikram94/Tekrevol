@@ -16,6 +16,7 @@ class ContactUs(BasePage):
     _get_in_touch = "[onclick='submit_contact\(\)']"  # By CSS
     _get_a_quote = "GET A QUOTE"  # link
     _image = ".col17 p"  # CSS
+    _thank_you = ".thanksyou"  # Css
 
     def __init__(self, driver):
         super().__init__(driver)
@@ -79,3 +80,5 @@ class ContactUs(BasePage):
         self.SelectProjectType(value)
         time.sleep(2)
         self.clickGetInTouch()
+        self.waitForElement(self._thank_you, locatorType='css')
+        self.nav.GetAQuote()

@@ -341,16 +341,19 @@ class SeleniumDriver:
              self.dropDownList(locator, locatorType, val="value")
         """
         try:
-            sel = Select(element)
+
             if locator:
                 element = self.getElement(locator, locatorType)
             if element is not None:
+                sel = Select(element)
                 sel.select_by_index(val)
                 self.log.info("Element selected from list by Index: " + val)
             elif val == "value":
                 self.log.info("Element selected from list by Value: " + val)
+                sel = Select(element)
                 return sel.select_by_value(val)
             else:
+                sel = Select(element)
                 sel.select_by_visible_text(val)
                 self.log.info("Element selected from list by Visible Text" + val)
 

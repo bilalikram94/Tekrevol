@@ -29,7 +29,6 @@ class AboutUs(BasePage):
         self.driver = driver
 
     def verifyAboutUs(self):
-        self.scrollIntoView(self.about_us, locatorType="css")
         result = self.isElementPresent(self.about_us, locatorType='css')
         return result
 
@@ -71,6 +70,7 @@ class AboutUs(BasePage):
         return result
 
     def AboutUsAll(self):
+        self.scrollIntoView(self.about_us, locatorType="css")
         result = self.verifyAboutUs()
         self.stat.mark(result, "Verify About Us")
         result2 = self.verifyOurVision()
