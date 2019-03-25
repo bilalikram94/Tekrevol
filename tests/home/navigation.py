@@ -4,11 +4,11 @@ from pages.home.navigation import Navigation
 
 
 @pytest.mark.usefixtures("oneTimeSetUp", "setUp")
-class HomeTest(unittest.TestCase, Navigation):
+class NavigationTest(unittest.TestCase):
     @pytest.fixture(autouse=True)
     def classSetup(self, oneTimeSetUp):
-        self.navigation = Navigation(self.driver)
+        self.nav = Navigation(self.driver)
 
     @pytest.mark.run(order=1)
     def test_Navigation(self):
-        self.NavigationTest()
+        self.nav.NavigationTest()

@@ -11,15 +11,17 @@ class Navigation(SeleniumDriver):
     _about = "/html[1]/body[1]/main[1]/div[1]/header[1]/div[1]/div[2]/div[3]/nav[1]/div[1]/ul[1]/li[2]/a[1]"  # css
     _portfolio = "PORTFOLIO"  # link-text
     _text = "[class='col-sm-6 text-col'] h1"  # CSS
-    _services = "/html[1]/body[1]/main[1]/div[1]/header[1]/div[1]/div[2]/div[3]/nav[1]/div[1]/ul[1]/li[4]/a[1]"  # css
-    _app_development = "[class='col-sm-4 equal']:nth-of-type(2) .viewmore-services"  # CSS
-    _android_development = "[class='col-sm-4 equal']:nth-of-type(5) .viewmore-services"  # CSS
-    _iphone_development = "[class='col-sm-4 equal']:nth-of-type(4) .viewmore-services"  # CSS
-    _web_development = "[class='col-sm-4 equal']:nth-of-type(1) .viewmore-services"  # CSS
-    _game_development = "[class='col-sm-4 equal']:nth-of-type(3) .viewmore-services"  # CSS
-    _wearable_development = "[class='col-sm-4 equal']:nth-of-type(6) .viewmore-services"  # CSS
-    _mobile_app_support = "[class='col-sm-4 equal']:nth-of-type(8) .viewmore-services"  # CSS
-    _support_maintenance = "[class='col-sm-4 equal']:nth-of-type(9) .viewmore-services"  # CSS
+    _services = ".has-dropdown-menu\.html [href='https\:\/\/www\.tekrevol\.com\/services']"  # xpath
+    _app_development = ".has-dropdown-menu\.html [href='https\:\/\/www\.tekrevol\.com\/app-development']"  # CSS
+    _android_development = ".has-dropdown-menu\.html [href='https\:\/\/www\.tekrevol\.com\/android-app-development']"  # CSS
+    _iphone_development = ".has-dropdown-menu\.html [href='https\:\/\/www\.tekrevol\.com\/iphone-app-development']"  # CSS
+    _web_development = ".has-dropdown-menu\.html [href='https\:\/\/www\.tekrevol\.com\/web-development']"  # CSS
+    _game_development = ".has-dropdown-menu\.html [href='https\:\/\/www\.tekrevol\.com\/game-development']"  # CSS
+    _wearable_development = ".has-dropdown-menu\.html [href='https\:\/\/www\.tekrevol\.com\/wearable-app-development']"  # CSS
+    _mobile_app_support = ".has-dropdown-menu\.html [href='https\:\/\/www\.tekrevol\.com\/mobile-app-support']"  # CSS
+    _startup_prototype = ".has-dropdown-menu\.html [href='https\:\/\/www\.tekrevol\.com\/startup-prototype']"  # CSS
+    _support_maintenance = ".has-dropdown-menu\.html [href='https\:\/\/www\.tekrevol\.com\/support-maintenance']"  # CSS
+    _ip_protection = ".has-dropdown-menu\.html [href='https\:\/\/www\.tekrevol\.com\/ip-protection']"  # CSS
     _blog = "BLOG"  # link text
     _contact_us = "CONTACT US"  # link
     _get_a_quote = "GET A QUOTE"  # link
@@ -34,38 +36,39 @@ class Navigation(SeleniumDriver):
         self.elementClick(self._portfolio, locatorType='link')
 
     def Services(self):
-        self.elementClick(self._services, locatorType='xpath')
+        self.mouseHover(self._services, locatorType='css')
 
     def AppDevelopment(self):
-        self.elementClick(self._app_development, locatorType='css')
+        self.Services()
+        self.mouseClick(self._app_development, locatorType='css')
 
     def AndroidDevelopment(self):
         self.Services()
-        self.elementClick(self._android_development, locatorType='css')
+        self.mouseClick(self._android_development, locatorType='css')
 
     def IphoneDevelopment(self):
         self.Services()
-        self.elementClick(self._iphone_development, locatorType='css')
+        self.mouseClick(self._iphone_development, locatorType='css')
 
     def WebDevelopment(self):
         self.Services()
-        self.elementClick(self._web_development, locatorType='css')
+        self.mouseClick(self._web_development, locatorType='css')
 
     def GameDevelopment(self):
         self.Services()
-        self.elementClick(self._game_development, locatorType='css')
+        self.mouseClick(self._game_development, locatorType='css')
 
     def WearableDevelopment(self):
         self.Services()
-        self.elementClick(self._wearable_development, locatorType='css')
+        self.mouseClick(self._wearable_development, locatorType='css')
 
     def MobileAppSupport(self):
         self.Services()
-        self.elementClick(self._mobile_app_support, locatorType='css')
+        self.mouseClick(self._mobile_app_support, locatorType='css')
 
     def SupportMaintenance(self):
         self.Services()
-        self.elementClick(self._support_maintenance, locatorType='css')
+        self.mouseClick(self._support_maintenance, locatorType='css')
 
     def Blog(self):
         self.elementClick(self._blog, locatorType='link')
@@ -75,11 +78,6 @@ class Navigation(SeleniumDriver):
 
     def GetAQuote(self):
         self.elementClick(self._get_a_quote, locatorType='link')
-
-    # def Services1(self):
-    #     _ser1 = ".has-dropdown-menu\.html .nav"
-    #     self.mouseHover(_ser1, locatorType='css')
-    #     time.sleep(2)
 
     def NavigationTest(self):
         self.About()

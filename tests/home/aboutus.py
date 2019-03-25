@@ -5,7 +5,7 @@ from pages.home.aboutus import AboutUs
 
 
 @pytest.mark.usefixtures("oneTimeSetUp", "setUp")
-class AboutUsTest(unittest.TestCase, AboutUs):
+class AboutUsTest(unittest.TestCase):
     @pytest.fixture(autouse=True)
     def classSetup(self, oneTimeSetUp):
         self.about = AboutUs(self.driver)

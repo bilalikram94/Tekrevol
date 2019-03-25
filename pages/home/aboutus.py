@@ -6,7 +6,7 @@ import time
 
 class AboutUs(BasePage):
     log = cl.customLogger(logging.DEBUG)
-    about_us = ".journey-main .heading-rotated div"  # CSS
+    about_us = ".journey h3"  # CSS
     our_vision = ".journey h3"  # CSS
     our_vision_text = ".journey p"  # CSS
     more_about_us = "MORE ABOUT US"  # Link Text
@@ -70,7 +70,7 @@ class AboutUs(BasePage):
         return result
 
     def AboutUsAll(self):
-        self.scrollIntoView(self.about_us, locatorType="css")
+        self.scrollIntoView(self.our_vision, locatorType="css")
         result = self.verifyAboutUs()
         self.stat.mark(result, "Verify About Us")
         result2 = self.verifyOurVision()
